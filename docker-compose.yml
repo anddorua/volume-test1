@@ -1,0 +1,10 @@
+version: '2'
+services:
+  setup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - testvolume:/var/lib/postgresql/data
+volumes:
+  testvolume:
